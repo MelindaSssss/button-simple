@@ -10,14 +10,6 @@ function resolve(relatedPath) {
 
 const webpackConfigDev = {
   mode: "development",
-  resolve: {
-    alias: {
-      // react: path.join(NODE_DIR, "react/dist/react.min.js"),
-      // "react-dom": path.join(NODE_DIR, "react-dom/dist/react-dom.min.js"),
-      React: "react",
-      ReactDOM: "react-dom",
-    },
-  },
   entry: {
     app: [resolve("../src/index.js")],
   },

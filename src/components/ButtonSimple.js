@@ -3,7 +3,10 @@ import "./ButtonSimple.css";
 const ButtonSimple = () => {
   const [buttonText, setButtonText] = useState("login");
   return (
-    <div className="button-container" onClick={() => setButtonText}>
+    <div
+      className="button-container"
+      onClick={() => setButtonText(buttonText === "login" ? "logout" : "login")}
+    >
       <span>{buttonText}</span>
     </div>
   );
